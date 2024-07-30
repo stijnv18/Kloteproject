@@ -45,5 +45,5 @@ app.MapPost("/saveNote", ([FromBody] Note note) =>
 .WithName("SaveNote")
 .WithOpenApi();
 
-app.Run();
+app.Run("https://localhost:8888");
 

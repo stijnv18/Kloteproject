@@ -22,7 +22,7 @@ namespace NoteSaverApp
                 FilePath = filePath
             };
 
-            string apiUrl = "https://localhost:7079/saveNote"; // Adjust the URL if needed
+            string apiUrl = "https://localhost:8888/saveNote"; // Adjust the URL if needed
 
             using (HttpClient client = new HttpClient())
             {

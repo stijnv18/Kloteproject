@@ -1,2 +1,4 @@
 
 *.vsidx
+/NoteSaverAPI/bin/Debug
+/NoteSaverAPI/bin/Debug
