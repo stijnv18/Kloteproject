@@ -1,0 +1,7 @@
+C:\Users\Stijn\OneDrive - Thomas More\Bureaublad\jaar3\c sherp\Project\Project attempt 2\Test voor project\bin\Debug\Test voor project.exe.config
+C:\Users\Stijn\OneDrive - Thomas More\Bureaublad\jaar3\c sherp\Project\Project attempt 2\Test voor project\bin\Debug\Test voor project.exe
+C:\Users\Stijn\OneDrive - Thomas More\Bureaublad\jaar3\c sherp\Project\Project attempt 2\Test voor project\bin\Debug\Test voor project.pdb
+C:\Users\Stijn\OneDrive - Thomas More\Bureaublad\jaar3\c sherp\Project\Project attempt 2\Test voor project\obj\Debug\Test voor project.csproj.AssemblyReference.cache
+C:\Users\Stijn\OneDrive - Thomas More\Bureaublad\jaar3\c sherp\Project\Project attempt 2\Test voor project\obj\Debug\Test voor project.csproj.CoreCompileInputs.cache
+C:\Users\Stijn\OneDrive - Thomas More\Bureaublad\jaar3\c sherp\Project\Project attempt 2\Test voor project\obj\Debug\Test voor project.exe
+C:\Users\Stijn\OneDrive - Thomas More\Bureaublad\jaar3\c sherp\Project\Project attempt 2\Test voor project\obj\Debug\Test voor project.pdb
