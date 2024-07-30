@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Stijn\\OneDrive - Thomas More\\Bureaublad\\jaar3\\c sherp\\Project\\Project attempt 2\\NoteSaverAPI\\NoteSaverAPI.csproj": {}
+    "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Stijn\\OneDrive - Thomas More\\Bureaublad\\jaar3\\c sherp\\Project\\Project attempt 2\\NoteSaverAPI\\NoteSaverAPI.csproj": {
+    "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Bureaublad\\jaar3\\c sherp\\Project\\Project attempt 2\\NoteSaverAPI\\NoteSaverAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj",
         "projectName": "NoteSaverAPI",
-        "projectPath": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Bureaublad\\jaar3\\c sherp\\Project\\Project attempt 2\\NoteSaverAPI\\NoteSaverAPI.csproj",
+        "projectPath": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj",
         "packagesPath": "C:\\Users\\Stijn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Bureaublad\\jaar3\\c sherp\\Project\\Project attempt 2\\NoteSaverAPI\\obj\\",
+        "outputPath": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

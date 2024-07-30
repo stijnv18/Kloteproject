@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vEaLcyN7wNbsRzYEiWHV+XiHNoWjB0B3fSkezKqxTvNSVNq8qbsBv4a0V6iAblf8OYyIRBplpEq0WkjtBbPe/g==",
+  "dgSpecHash": "ulMLC+w+BBCMMDSCwmaYtj6tE9Xx5BfQTd8gTCgm8OMZJzakFswrev9zQlKFlVrMXx/cityHF70t1bYc9iF/hQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Bureaublad\\jaar3\\c sherp\\Project\\Project attempt 2\\NoteSaverAPI\\NoteSaverAPI.csproj",
+  "projectFilePath": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stijn\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "C:\\Users\\Stijn\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
