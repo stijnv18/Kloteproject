@@ -2,3 +2,4 @@
 *.vsidx
 /NoteSaverAPI/bin/Debug
 /NoteSaverAPI/bin/Debug
+/NoteSaverAPI/bin/Debug/net8.0

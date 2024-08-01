@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using NoteSaverAPI.Models;
 using System;
-using System.IO;
+using System.Threading.Tasks;
 
 namespace NoteSaverAPI.Controllers
 {
@@ -9,22 +10,27 @@ namespace NoteSaverAPI.Controllers
     [ApiController]
     public class NotesController : ControllerBase
     {
-        [HttpPost]
-        public IActionResult SaveNote([FromBody] Note note)
+        private readonly AppDbContext _dbContext;
+
+        public NotesController(AppDbContext dbContext)
         {
-            if (note == null || string.IsNullOrEmpty(note.Content) || string.IsNullOrEmpty(note.FilePath))
+            _dbContext = dbContext;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SaveNote([FromBody] Note note)
+        {
+            if (note == null || string.IsNullOrEmpty(note.Content))
             {
-                return BadRequest("Note content and file path are required.");
+                return BadRequest("Note content is required.");
             }
 
             try
             {
-                System.IO.File.WriteAllText(note.FilePath, note.Content);
+                // Save the note to the database
+                _dbContext.Posts.Add(note);
+                await _dbContext.SaveChangesAsync();
                 return Ok("Note saved successfully.");
-            }
-            catch (UnauthorizedAccessException)
-            {
-                return StatusCode(403, "You do not have permission to save to this location.");
             }
             catch (Exception ex)
             {

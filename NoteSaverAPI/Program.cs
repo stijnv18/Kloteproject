@@ -1,12 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NoteSaverAPI.Models;
-using System.IO;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Configure MySQL connection
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySQL(connectionString));
 
 var app = builder.Build();
 
@@ -19,31 +25,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthorization();
 
-// Add the new endpoint for saving notes
-app.MapPost("/saveNote", ([FromBody] Note note) =>
-{
-    if (note == null || string.IsNullOrEmpty(note.Content) || string.IsNullOrEmpty(note.FilePath))
-    {
-        return Results.BadRequest("Note content and file path are required.");
-    }
-
-    try
-    {
-        File.WriteAllText(note.FilePath, note.Content);
-        return Results.Ok("Note saved successfully.");
-    }
-    catch (UnauthorizedAccessException)
-    {
-        return Results.Problem("You do not have permission to save to this location.", statusCode: 403);
-    }
-    catch (Exception ex)
-    {
-        return Results.Problem($"An error occurred while saving the note: {ex.Message}", statusCode: 500);
-    }
-})
-.WithName("SaveNote")
-.WithOpenApi();
+app.MapControllers();
 
 app.Run("https://localhost:8888");
-
