@@ -1,0 +1,10 @@
+Create database BlogDB
+
+Use BlogDB
+
+CREATE TABLE posts (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Title VARCHAR(255) NOT NULL,
+    Content TEXT NOT NULL,
+    CreatedAt DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

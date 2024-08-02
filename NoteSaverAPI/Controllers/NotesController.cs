@@ -1,8 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc;
 using NoteSaverAPI.Models;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
 namespace NoteSaverAPI.Controllers
 {
@@ -11,10 +14,12 @@ namespace NoteSaverAPI.Controllers
     public class NotesController : ControllerBase
     {
         private readonly AppDbContext _dbContext;
+        private readonly ILogger<NotesController> _logger;
 
-        public NotesController(AppDbContext dbContext)
+        public NotesController(AppDbContext dbContext, ILogger<NotesController> logger)
         {
             _dbContext = dbContext;
+            _logger = logger;
         }
 
         [HttpPost]
@@ -27,14 +32,30 @@ namespace NoteSaverAPI.Controllers
 
             try
             {
-                // Save the note to the database
-                _dbContext.Posts.Add(note);
+                _dbContext.Notes.Add(note);
                 await _dbContext.SaveChangesAsync();
+                _logger.LogInformation("Note saved successfully.");
                 return Ok("Note saved successfully.");
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "An error occurred while saving the note.");
                 return StatusCode(500, $"An error occurred while saving the note: {ex.Message}");
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllNotes()
+        {
+            try
+            {
+                var notes = await _dbContext.Notes.ToListAsync();
+                return Ok(notes);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while retrieving the notes.");
+                return StatusCode(500, $"An error occurred while retrieving the notes: {ex.Message}");
             }
         }
     }
