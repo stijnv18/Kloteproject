@@ -12,7 +12,12 @@ namespace MyMauiApp.Services
 
         public ApiService()
         {
-            _httpClient = new HttpClient();
+            var handler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+            };
+
+            _httpClient = new HttpClient(handler);
         }
 
         public async Task<bool> PostDataAsync<T>(string url, T data)
@@ -20,6 +25,7 @@ namespace MyMauiApp.Services
             try
             {
                 // Serialize the data to JSON and post it
+                var jsonData = JsonSerializer.Serialize(data);
                 var response = await _httpClient.PostAsJsonAsync(url, data);
 
                 // Check if the request was successful

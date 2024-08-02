@@ -1,1 +1,1 @@
-C:\Users\vbtan\Documents\GitHub\Kloteproject\MauiApp2\MauiApp2.csproj;x64
+C:\Users\Stijn\OneDrive - Thomas More\Documenten\GitHub\Kloteproject\MauiApp2\MauiApp2.csproj;x64
