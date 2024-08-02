@@ -28,9 +28,9 @@ namespace NoteSaverAPI.Controllers
             try
             {
                 // Save the note to the database
-                _dbContext.Posts.Add(note);
+                _dbContext.Notes.Add(note);
                 await _dbContext.SaveChangesAsync();
-                return Ok("Note saved successfully.");
+                return Ok("Note saved successfully.");  
             }
             catch (Exception ex)
             {
