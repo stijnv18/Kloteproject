@@ -22,6 +22,7 @@
                 Text = "Submit your blog"
                 Clicked = "OnSubmitBlog"/>
 		<Label x:Name="notifyApiStatusLabel" Text="" FontSize="10"/>
+        <Label x:Name="TestStatusLabel" Text="" FontSize="10"/>
 		
     </VerticalStackLayout>
     

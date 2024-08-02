@@ -15,7 +15,7 @@ public partial class SubPageMakeNewBlog : ContentPage
 
     public string newBlogTitel = "Empty value";
     public string newBlogText = "Empty value";
-    string apiUrl = "https://localhost:8888/saveNote"; // Adjust the URL if needed
+    string apiUrl = "https://127.0.0.1:8888/saveNote"; // Adjust the URL if needed
 
 
     public async void OnSubmitBlog(object sender, EventArgs e)   // The function connected to a button in SubPageMakeNewBlog.xaml
@@ -26,6 +26,8 @@ public partial class SubPageMakeNewBlog : ContentPage
             newBlogText = textOfBlog.Text       // textOfBlog is the name of one of the "entry" in SubPageMakeNewBlog.xaml
         };
 
+        TestStatusLabel.Text =$"{data.newBlogTitel} -- {data.newBlogText} -- {apiUrl}";
+
         bool success = await _apiService.PostDataAsync(apiUrl, data);
         if (success)
         {
@@ -33,6 +35,10 @@ public partial class SubPageMakeNewBlog : ContentPage
             notifyApiStatusLabel.Text = "Data posted successfully.";
             // Change the text color
             notifyApiStatusLabel.TextColor = Colors.Green;
+
+            // Change the input fields back to empty
+            nameOfBlog.Text = "";
+            textOfBlog.Text = "";
         }
         else
         {
