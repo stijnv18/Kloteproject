@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\visual studio projects\\mauiapp2\\subpagemakenewblog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:subpagemakenewblog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\visual studio projects\\mauiapp2\\mainpageblogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:mainpageblogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\visual studio projects\\mauiapp2\\subpagemakenewblog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:subpagemakenewblog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\visual studio projects\\mauiapp2\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\visual studio projects\\mauiapp2\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SubPageMakeNewBlog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\SubPageMakeNewBlog.xaml.cs",
+              "RelativeDocumentMoniker": "SubPageMakeNewBlog.xaml.cs",
+              "ToolTip": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\SubPageMakeNewBlog.xaml.cs",
+              "RelativeToolTip": "SubPageMakeNewBlog.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T13:59:04.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T13:51:16.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-02T13:40:16.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubPageMakeNewBlog.xaml",
+              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\SubPageMakeNewBlog.xaml",
+              "RelativeDocumentMoniker": "SubPageMakeNewBlog.xaml",
+              "ToolTip": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\SubPageMakeNewBlog.xaml",
+              "RelativeToolTip": "SubPageMakeNewBlog.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-02T13:39:09.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPageBlogs.xaml",
+              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\MainPageBlogs.xaml",
+              "RelativeDocumentMoniker": "MainPageBlogs.xaml",
+              "ToolTip": "C:\\Users\\vbtan\\Documents\\Visual studio Projects\\MauiApp2\\MainPageBlogs.xaml",
+              "RelativeToolTip": "MainPageBlogs.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-02T13:38:33.619Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

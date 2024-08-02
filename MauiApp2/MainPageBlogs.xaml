@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPageBlogs"
+             >
+    
+    <VerticalStackLayout Spacing="15" Padding="20">
+
+        <Label 
+            Text="Bloggers 1 Naam"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" 
+            Background="Red" />
+        <Label 
+            Text="Tekst van de blog"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" 
+            Background="Green" />
+
+        <Label 
+            Text="Blogger 2 Naam"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" 
+            Background="Red" />
+        <Label 
+            Text="Tekst van de blog"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" 
+            Background="Green" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
