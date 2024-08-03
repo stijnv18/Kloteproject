@@ -1,6 +1,6 @@
-Create database BlogDB
+CREATE DATABASE BlogDB;
 
-Use BlogDB
+USE BlogDB;
 
 CREATE TABLE posts (
     Id INT AUTO_INCREMENT PRIMARY KEY,
