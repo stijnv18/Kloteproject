@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\github\\kloteproject\\mauiapp2\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\github\\kloteproject\\mauiapp2\\mainpageblogs.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:mainpageblogs.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\github\\kloteproject\\mauiapp2\\subpagemakenewblog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:subpagemakenewblog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\github\\kloteproject\\mauiapp2\\mainpageblogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:mainpageblogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\github\\kloteproject\\mauiapp2\\datablog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:datablog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\ApiService.cs",
-              "RelativeDocumentMoniker": "ApiService.cs",
-              "ToolTip": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\ApiService.cs",
-              "RelativeToolTip": "ApiService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAawBsAAAAgAAAA",
+              "DocumentIndex": 2,
+              "Title": "DataBlog.cs",
+              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\DataBlog.cs",
+              "RelativeDocumentMoniker": "DataBlog.cs",
+              "ToolTip": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\DataBlog.cs",
+              "RelativeToolTip": "DataBlog.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAlwAwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T15:15:21.13Z",
+              "WhenOpened": "2024-08-03T14:47:41.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPageBlogs.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MainPageBlogs.xaml.cs",
+              "RelativeDocumentMoniker": "MainPageBlogs.xaml.cs",
+              "ToolTip": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MainPageBlogs.xaml.cs",
+              "RelativeToolTip": "MainPageBlogs.xaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAIA7wBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T15:10:41.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SubPageMakeNewBlog.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\SubPageMakeNewBlog.xaml.cs",
-              "RelativeDocumentMoniker": "SubPageMakeNewBlog.xaml.cs",
-              "ToolTip": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\SubPageMakeNewBlog.xaml.cs",
-              "RelativeToolTip": "SubPageMakeNewBlog.xaml.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwB4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T14:15:22.409Z",
+              "Title": "MainPageBlogs.xaml",
+              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MainPageBlogs.xaml",
+              "RelativeDocumentMoniker": "MainPageBlogs.xaml",
+              "ToolTip": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MainPageBlogs.xaml",
+              "RelativeToolTip": "MainPageBlogs.xaml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-03T14:47:59.984Z",
               "EditorCaption": ""
             }
           ]

@@ -5,19 +5,20 @@ namespace MauiApp2;
 
 public partial class SubPageMakeNewBlog : ContentPage
 {
+    // Vaiables ----------------------------------------------------------------------------------------------------------------------------
     private readonly ApiService _apiService;
+    public string newBlogTitel = "Empty value";
+    public string newBlogText = "Empty value";
+    string apiPostUrl = "https://localhost:8888/api/notes"; // Adjust the URL if needed
 
+    // Constructor ----------------------------------------------------------------------------------------------------------------------------
     public SubPageMakeNewBlog()
 	{
         InitializeComponent();
         _apiService = new ApiService();
     }
 
-    public string newBlogTitel = "Empty value";
-    public string newBlogText = "Empty value";
-    string apiUrl = "https://localhost:8888/api/notes"; // Adjust the URL if needed
-
-
+    // Methodes ----------------------------------------------------------------------------------------------------------------------------
     public async void OnSubmitBlog(object sender, EventArgs e)   // The function connected to a button in SubPageMakeNewBlog.xaml
     {
         var data = new
@@ -26,11 +27,9 @@ public partial class SubPageMakeNewBlog : ContentPage
             content = textOfBlog.Text       // textOfBlog is the name of one of the "entry" in SubPageMakeNewBlog.xaml
         };
 
-        TestStatusLabel.Text = $"{data.title} -- {data.content} -- {apiUrl}";
-
         try
         {
-            bool success = await _apiService.PostDataAsync(apiUrl, data);
+            bool success = await _apiService.PostDataAsync(apiPostUrl, data);
             if (success)
             {
                 // Change the content of the Label
