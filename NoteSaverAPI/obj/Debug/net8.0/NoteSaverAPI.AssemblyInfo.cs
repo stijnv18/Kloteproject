@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NoteSaverAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+868b7597a057faa17eb0fbb3c315ad13e099d73c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50f6567dfb2d943c05174a4b1d3c0d7baf15d703")]
 [assembly: System.Reflection.AssemblyProductAttribute("NoteSaverAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NoteSaverAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

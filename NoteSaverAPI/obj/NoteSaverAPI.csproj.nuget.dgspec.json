@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj": {}
+    "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj": {
+    "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj",
         "projectName": "NoteSaverAPI",
-        "projectPath": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj",
-        "packagesPath": "C:\\Users\\vbtan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\NoteSaverAPI\\obj\\",
+        "projectPath": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\NoteSaverAPI.csproj",
+        "packagesPath": "C:\\Users\\Stijn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stijn\\OneDrive - Thomas More\\Documenten\\GitHub\\Kloteproject\\NoteSaverAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\vbtan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Stijn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -88,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
