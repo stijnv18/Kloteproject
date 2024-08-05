@@ -58,5 +58,28 @@ namespace NoteSaverAPI.Controllers
                 return StatusCode(500, $"An error occurred while retrieving the notes: {ex.Message}");
             }
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteNote([FromRoute] int id)
+        {
+            try
+            {
+                var note = await _dbContext.Notes.FindAsync(id);
+                if (note == null)
+                {
+                    return NotFound($"Note with ID {id} not found.");
+                }
+
+                _dbContext.Notes.Remove(note);
+                await _dbContext.SaveChangesAsync();
+                _logger.LogInformation($"Note with ID {id} deleted successfully.");
+                return Ok($"Note with ID {id} deleted successfully.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while deleting the note with ID {id}.");
+                return StatusCode(500, $"An error occurred while deleting the note: {ex.Message}");
+            }
+        }
     }
 }
