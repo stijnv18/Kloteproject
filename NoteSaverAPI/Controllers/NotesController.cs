@@ -81,5 +81,57 @@ namespace NoteSaverAPI.Controllers
                 return StatusCode(500, $"An error occurred while deleting the note: {ex.Message}");
             }
         }
+
+
+
+        [HttpPost("{id}/like")]
+
+        public async Task<IActionResult> LikePost([FromRoute] int id)
+        {
+            try
+            {
+                var post = await _dbContext.Notes.FindAsync(id);
+                if (post == null)
+                {
+                    return NotFound($"Post with ID {id} not found.");
+                }
+
+                post.Likes += 1;
+                await _dbContext.SaveChangesAsync();
+                _logger.LogInformation($"Post with ID {id} liked.");
+                return Ok($"Post with ID {id} liked.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while liking the post with ID {id}.");
+                return StatusCode(500, $"An error occurred while liking the post: {ex.Message}");
+            }
+        }
+
+        [HttpPost("{id}/dislike")]
+
+        public async Task<IActionResult> DislikePost([FromRoute] int id)
+        {
+            try
+            {
+                var post = await _dbContext.Notes.FindAsync(id);
+                if (post == null)
+                {
+                    return NotFound($"Post with ID {id} not found.");
+                }
+
+                post.Dislikes += 1;
+                await _dbContext.SaveChangesAsync();
+                _logger.LogInformation($"Post with ID {id} Disliked.");
+                return Ok($"Post with ID {id} Disliked.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"An error occurred while Disliking the post with ID {id}.");
+                return StatusCode(500, $"An error occurred while Disliking the post: {ex.Message}");
+            }
+        }
+
+
     }
 }
