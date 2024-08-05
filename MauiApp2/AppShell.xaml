@@ -13,5 +13,8 @@
         <Tab Title="Make New Blog">
             <ShellContent ContentTemplate="{DataTemplate local:SubPageMakeNewBlog}" />
         </Tab>
+        <Tab Title="Profiles">
+            <ShellContent ContentTemplate="{DataTemplate local:SubPageUserProfile}" />
+        </Tab>
     </TabBar>
 </Shell>

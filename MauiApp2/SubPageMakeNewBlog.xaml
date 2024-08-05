@@ -19,7 +19,7 @@
                Placeholder = "Type the Text of the blog" />
 
         <Button x:Name = "submitBlog"
-                Text = "Submit your blog"
+                Text = "Post your blog"
                 Clicked = "OnSubmitBlog"/>
 		<Label x:Name="notifyApiStatusLabel" Text="" FontSize="10"/>
         <Label x:Name="TestStatusLabel" Text="" FontSize="10"/>

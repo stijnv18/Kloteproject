@@ -9,6 +9,9 @@
     <MauiXaml Update="MainPageBlogs.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="SubPageUserProfile.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="SubPageMakeNewBlog.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

@@ -3,46 +3,94 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.MainPageBlogs"
              >
-    
-    <VerticalStackLayout Spacing="15" Padding="20">
-        
-        <Button x:Name = "GetBlogs"
-                Text = "Get blogs from database"
-                Clicked = "OnGetBlogs"/>
-        <Label
-            x:Name = "NotificationGetBlogs"
-            VerticalOptions="Center" 
-            HorizontalOptions="Start" />
-        
-        <CollectionView ItemsSource="{Binding ListOfBlogs}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
 
-                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Title}" FontSize="40"
-                            VerticalOptions="Center" HorizontalOptions="Start" TextColor="White"
-                        />
-                        <Label Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding Content}" FontSize="Small" 
-                                VerticalOptions="Center" HorizontalOptions="Start" TextColor="Gray"
-                        />
-                        <Label Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding CreatedAt}" FontSize="8" 
-                                VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"
-                        />
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="20">
+            <Button x:Name = "GetBlogs"
+                    Text = "Refresh blog posts"
+                    Clicked = "OnGetBlogs"/>
+
+            <Label
+                x:Name = "NotificationGetBlogs"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"/>
+            
+            <CollectionView ItemsSource="{Binding ListOfBlogs}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
                         
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        
-    </VerticalStackLayout>
-    
+                        <Frame HasShadow="False" BackgroundColor="LightGray" CornerRadius="20">
+                            <Grid Background="LightGray">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="10"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="90"/>
+                                    <ColumnDefinition Width="90"/>
+                                    
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="35"/>
+                                    <ColumnDefinition Width="35"/>
+                                    
+                                    <ColumnDefinition Width="20"/>
+                                    <ColumnDefinition Width="35"/>
+                                    <ColumnDefinition Width="35"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.ColumnSpan="6" Text="{Binding Title}" FontSize="40"
+                                    VerticalOptions="Center" HorizontalOptions="Start" TextColor="MediumPurple"
+                                />
+                                <Label Grid.Row="1" Grid.ColumnSpan="6" Text="{Binding Content}" FontSize="Small" MinimumHeightRequest="100"
+                                        VerticalOptions="Center" HorizontalOptions="Start" TextColor="DimGray"
+                                />
+
+                                <Rectangle Grid.Row="2" Grid.Column="0" BackgroundColor="MediumPurple"/>
+                                <Label x:Name="ButtonUser" Grid.Row="2" Grid.Column="1" Text="USERNAME LastName" FontSize="8" Background="Transparent"
+                                        VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Tapped="OnLabelTapped"
+                                            NumberOfTapsRequired="1" />
+                                    </Label.GestureRecognizers>
+                                </Label>
+                                <Label Grid.Row="2" Grid.Column="2" Text="{Binding CreatedAt}" FontSize="8" 
+                                        VerticalOptions="Center" HorizontalOptions="Center" TextColor="DimGray"
+                                />
+
+                                <Button x:Name = "LikeBlogs" Clicked = "OnLikeBlog" CommandParameter="{Binding Id}"
+                                        Grid.Row="2" Grid.Column="3"
+                                        VerticalOptions="Center" HorizontalOptions="Center" Background="Green"
+                                />
+                                <Label Grid.Row="2" Grid.Column="4" Text="Likes:" FontSize="8"
+                                    VerticalOptions="Center" HorizontalOptions="End" TextColor="Black"
+                                />
+                                <Label x:Name="NotificationLikeBlogs" Text="{Binding BlogLikeCounter}"
+                                    Grid.Row="2" Grid.Column="5" FontSize="8"
+                                    VerticalOptions="Center" HorizontalOptions="Start" TextColor="DimGray"
+                                />
+
+
+                                <Button x:Name = "DislikeBlogs" Clicked = "OnDislikeBlog" CommandParameter="{Binding Id}"
+                                        Grid.Row="2" Grid.Column="6"
+                                        VerticalOptions="Center" HorizontalOptions="Center" Background="Red"
+                                />
+                                <Label Grid.Row="2" Grid.Column="7" Text="Dislikes:" FontSize="8"
+                                    VerticalOptions="Center" HorizontalOptions="End" TextColor="Black"
+                                />
+                                <Label x:Name = "NotificationDislikeBlogs" Text="100"
+                                    Grid.Row="2" Grid.Column="8" FontSize="8"
+                                    VerticalOptions="Center" HorizontalOptions="Start" TextColor="DimGray"
+                                />
+                            </Grid>
+                        </Frame>
+                        
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
