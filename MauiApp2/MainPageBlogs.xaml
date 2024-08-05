@@ -49,13 +49,7 @@
 
                                 <Rectangle Grid.Row="2" Grid.Column="0" BackgroundColor="MediumPurple"/>
                                 <Label x:Name="ButtonUser" Grid.Row="2" Grid.Column="1" Text="USERNAME LastName" FontSize="8" Background="Transparent"
-                                        VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
-                                            Tapped="OnLabelTapped"
-                                            NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
+                                        VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"/>
                                 <Label Grid.Row="2" Grid.Column="2" Text="{Binding CreatedAt}" FontSize="8" 
                                         VerticalOptions="Center" HorizontalOptions="Center" TextColor="DimGray"
                                 />
@@ -67,7 +61,7 @@
                                 <Label Grid.Row="2" Grid.Column="4" Text="Likes:" FontSize="8"
                                     VerticalOptions="Center" HorizontalOptions="End" TextColor="Black"
                                 />
-                                <Label x:Name="NotificationLikeBlogs" Text="{Binding BlogLikeCounter}"
+                                <Label x:Name="NotificationLikeBlogs" Text="{Binding Likes}"
                                     Grid.Row="2" Grid.Column="5" FontSize="8"
                                     VerticalOptions="Center" HorizontalOptions="Start" TextColor="DimGray"
                                 />
@@ -80,7 +74,7 @@
                                 <Label Grid.Row="2" Grid.Column="7" Text="Dislikes:" FontSize="8"
                                     VerticalOptions="Center" HorizontalOptions="End" TextColor="Black"
                                 />
-                                <Label x:Name = "NotificationDislikeBlogs" Text="100"
+                                <Label x:Name = "NotificationDislikeBlogs" Text="{Binding Dislikes}"
                                     Grid.Row="2" Grid.Column="8" FontSize="8"
                                     VerticalOptions="Center" HorizontalOptions="Start" TextColor="DimGray"
                                 />

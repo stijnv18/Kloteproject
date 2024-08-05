@@ -86,7 +86,7 @@ public partial class MainPageBlogs : ContentPage
             NotificationGetBlogs.TextColor = Colors.Red;
         }
     }
-    public async void PostLikeDislikeCounter(string apiurl, string tempBlogId, int tempBlogLikeCounter)
+    public async Task<bool> PostLikeDislikeCounter(string apiurl, int tempBlogId, int tempBlogLikeCounter)
     {
         // Place ID and Counter in data class
         var data = new
@@ -99,31 +99,34 @@ public partial class MainPageBlogs : ContentPage
         try
         {
             bool success = await _apiService.PostDataAsync(apiurl, data);
+            return true;
         }
         catch (HttpRequestException httpEx)
         {
             NotificationGetBlogs.Text = $"HTTP Request Error: {httpEx.Message}";
             NotificationGetBlogs.TextColor = Colors.Red;
+            return false;
         }
         catch (Exception ex)
         {
             NotificationGetBlogs.Text = $"General Error: {ex.Message}";
             NotificationGetBlogs.TextColor = Colors.Red;
+            return false;
         }
     }
-    public (string blogIdF, int CounterF) GetBlogIDAndCounter(object sender)
+    public (int blogIdF, int CounterF) GetBlogIDAndCounter(object sender)
     {
-        string tempBlogId = "null";
+        int tempBlogId = -4;
         int tempBlogLikeCounter = -5;
 
-        if (sender is Button button && button.CommandParameter is string blogId)
+        if (sender is Button button && button.CommandParameter is int blogId)
         {
             // Find the blog post in the collection
             var blog = ListOfBlogs.FirstOrDefault(b => b.Id == blogId);
             if (blog != null)
             {
                 tempBlogId = blog.Id;
-                tempBlogLikeCounter = blog.LikeCounter;
+                tempBlogLikeCounter = blog.Likes;
 
                 return (tempBlogId, tempBlogLikeCounter);
             }
@@ -137,40 +140,44 @@ public partial class MainPageBlogs : ContentPage
             return (tempBlogId, tempBlogLikeCounter);
         }
     }
-    public void OnLikeBlog(object sender, EventArgs e)
+    public async void OnLikeBlog(object sender, EventArgs e)
     {
-        string BlogLikeID;
+        int BlogLikeID;
         int NewBlogLikeCounter;
 
         // Get BlogID and BlogLikeCounter
         var list = GetBlogIDAndCounter(sender);
 
         // Post BlogID and BlogLikeCounter
-        if (list.blogIdF != "null" || list.CounterF > 0)
+        if (list.blogIdF > 0 || list.CounterF > 0)
         {
             BlogLikeID = list.blogIdF;
             NewBlogLikeCounter = list.CounterF + 1;
-            PostLikeDislikeCounter(apiUrl, BlogLikeID, NewBlogLikeCounter);
+            string tempUrl = apiUrl + "/" + BlogLikeID.ToString() + "/" + "like";
+            await PostLikeDislikeCounter(tempUrl, BlogLikeID, NewBlogLikeCounter);
         }
 
         // Get new Like counter value
         InitGetBlogs();
+
+            
     }
 
-    public void OnDislikeBlog(object sender, EventArgs e)
+    public async void OnDislikeBlog(object sender, EventArgs e)
     {
-        string BlogDislikeID;
+        int BlogDislikeID;
         int BlogDislikeCounter;
-
+        
         // Get BlogID and BlogDislikeCounter
         var list = GetBlogIDAndCounter(sender);
 
         // Post BlogID and BlogDislikeCounter
-        if (list.blogIdF != "null" || list.CounterF > 0)
+        if (list.blogIdF > 0 || list.CounterF > 0)
         {
             BlogDislikeID = list.blogIdF;
             BlogDislikeCounter = list.CounterF + 1;
-            PostLikeDislikeCounter(apiUrl, BlogDislikeID, BlogDislikeCounter);
+            string tempUrl = apiUrl + "/" + BlogDislikeID.ToString() + "/" + "dislike";
+            await PostLikeDislikeCounter(tempUrl, BlogDislikeID, BlogDislikeCounter);
         }
 
         // Get new Dislikecounter value
