@@ -40,8 +40,11 @@
                                     <ColumnDefinition Width="35"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Label Grid.Row="0" Grid.ColumnSpan="6" Text="{Binding Title}" FontSize="40"
+                                <Label Grid.Row="0" Grid.ColumnSpan="5" Text="{Binding Title}" FontSize="40"
                                     VerticalOptions="Center" HorizontalOptions="Start" TextColor="MediumPurple"
+                                />
+                                <Button x:Name = "DeleteBlogs" Clicked = "OnDeleteBlog" CommandParameter="{Binding Id}" Grid.Row="0" Grid.Column="7" Grid.ColumnSpan="8" Text="X" 
+                                        BackgroundColor="Transparent" TextColor="MediumPurple" BorderColor="MediumPurple" BorderWidth="2"
                                 />
                                 <Label Grid.Row="1" Grid.ColumnSpan="6" Text="{Binding Content}" FontSize="Small" MinimumHeightRequest="100"
                                         VerticalOptions="Center" HorizontalOptions="Start" TextColor="DimGray"

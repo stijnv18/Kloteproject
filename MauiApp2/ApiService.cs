@@ -83,5 +83,37 @@ namespace MyMauiApp.Services
                 throw;
             }
         }
+        public async Task<bool> DeleteDataAsync(string url)
+        {
+            try
+            {
+                // Send the DELETE request
+                HttpResponseMessage response = await _httpClient.DeleteAsync(url);
+
+                // Check if the response was successful
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+
+                // Handle non-success status codes here
+                var responseBody = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Error: {response.StatusCode}, {responseBody}");
+                return false;
+
+            }
+            catch (HttpRequestException e)
+            {
+                // Handle possible network errors
+                Console.WriteLine($"Request error: {e.Message}");
+                return false;
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., network errors)
+                Console.WriteLine($"Exception: {ex.Message}");
+                return false;
+            }
+        }
     }
 }

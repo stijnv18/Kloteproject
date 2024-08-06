@@ -158,11 +158,8 @@ public partial class MainPageBlogs : ContentPage
         }
 
         // Get new Like counter value
-        InitGetBlogs();
-
-            
+        InitGetBlogs();  
     }
-
     public async void OnDislikeBlog(object sender, EventArgs e)
     {
         int BlogDislikeID;
@@ -182,6 +179,27 @@ public partial class MainPageBlogs : ContentPage
 
         // Get new Dislikecounter value
         InitGetBlogs();
+    }
+    public async void OnDeleteBlog(object sender, EventArgs e)
+    {
+        string DeleteURl = "";
+
+        // Get BlogID and BlogLikeCounter
+        var list = GetBlogIDAndCounter(sender);
+
+        // Post BlogID and BlogLikeCounter
+        if (list.blogIdF > 0)
+        {
+            DeleteURl = apiUrl + "/" + list.blogIdF.ToString();
+            bool success = await _apiService.DeleteDataAsync(DeleteURl);
+            if (success)
+            {
+                // Get new Dislikecounter value
+                InitGetBlogs();
+            }
+        }
+
+
     }
 
 }
