@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\vbtan\Documents\GitHub\Kloteproject\MauiApp2\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-05T14:00:34.159</Modified>
+      <Modified>2024-08-06T12:17:00.434</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vbtan\Documents\GitHub\Kloteproject\MauiApp2\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp2.dll">
       <PackagePath>MauiApp2.dll</PackagePath>
-      <Modified>2024-08-05T14:00:33.145</Modified>
+      <Modified>2024-08-06T12:16:59.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vbtan\Documents\GitHub\Kloteproject\MauiApp2\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp2.exe</PackagePath>
-      <Modified>2024-08-05T14:00:33.159</Modified>
+      <Modified>2024-08-06T12:16:59.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vbtan\Documents\GitHub\Kloteproject\MauiApp2\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
