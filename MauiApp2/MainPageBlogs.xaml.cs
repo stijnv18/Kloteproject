@@ -26,36 +26,9 @@ public partial class MainPageBlogs : ContentPage
     }
 
     // Methodes ----------------------------------------------------------------------------------------------------------------------------
-    public async void OnGetBlogs(object sender, EventArgs e)
-    {
-        try
-        {
-            // Call the function to get JSON data
-            var blogs = await _apiService.GetDataAsync(apiUrl);
 
-            // Clear the existing items in the ObservableCollection
-            ListOfBlogs.Clear();
 
-            // Check if blogs is not null
-            if (blogs != null)
-            {
-                // Add the fetched blogs to the ObservableCollection (Newest blog on top)
-                foreach (var blog in blogs)
-                {
-                    ListOfBlogs.Insert(0, blog);
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"An error occurred: {ex.Message}");
-
-            // Change the content of the Label
-            NotificationGetBlogs.Text = "Getting Data Failed!";
-            // Change the text color
-            NotificationGetBlogs.TextColor = Colors.Red;
-        }
-    }
+    //Goed werkende knoppen
     public async void InitGetBlogs()
     {
         try
@@ -86,58 +59,36 @@ public partial class MainPageBlogs : ContentPage
             NotificationGetBlogs.TextColor = Colors.Red;
         }
     }
-    public async Task<bool> PostLikeDislikeCounter(string apiurl, int tempBlogId, int tempBlogLikeCounter)
+    public async void OnGetBlogs(object sender, EventArgs e)
     {
-        // Place ID and Counter in data class
-        var data = new
-        {
-            BlogId = tempBlogId,
-            BlogLikeCounter = tempBlogLikeCounter
-        };
-
-        // connectie met database
         try
         {
-            bool success = await _apiService.PostDataAsync(apiurl, data);
-            return true;
-        }
-        catch (HttpRequestException httpEx)
-        {
-            NotificationGetBlogs.Text = $"HTTP Request Error: {httpEx.Message}";
-            NotificationGetBlogs.TextColor = Colors.Red;
-            return false;
+            // Call the function to get JSON data
+            var bloglist = await _apiService.GetDataAsync(apiUrl);
+
+            // Check if blogs is not null
+            if (bloglist != null)
+            {
+                foreach (var blog in bloglist)
+                {
+                    // Find the blog post in the collection
+                    var newblog = ListOfBlogs.FirstOrDefault(b => b.Id == blog.Id);
+                    if (newblog == null)
+                    {
+                        ListOfBlogs.Insert(0, blog);
+                    }
+
+                }
+            }
         }
         catch (Exception ex)
         {
-            NotificationGetBlogs.Text = $"General Error: {ex.Message}";
+            Console.WriteLine($"An error occurred: {ex.Message}");
+
+            // Change the content of the Label
+            NotificationGetBlogs.Text = "Getting Data Failed!";
+            // Change the text color
             NotificationGetBlogs.TextColor = Colors.Red;
-            return false;
-        }
-    }
-    public (int blogIdF, int CounterF) GetBlogIDAndCounter(object sender)
-    {
-        int tempBlogId = -4;
-        int tempBlogLikeCounter = -5;
-
-        if (sender is Button button && button.CommandParameter is int blogId)
-        {
-            // Find the blog post in the collection
-            var blog = ListOfBlogs.FirstOrDefault(b => b.Id == blogId);
-            if (blog != null)
-            {
-                tempBlogId = blog.Id;
-                tempBlogLikeCounter = blog.Likes;
-
-                return (tempBlogId, tempBlogLikeCounter);
-            }
-            else
-            {
-                return (tempBlogId, tempBlogLikeCounter);
-            }
-        }
-        else
-        {
-            return (tempBlogId, tempBlogLikeCounter);
         }
     }
     public async void OnLikeBlog(object sender, EventArgs e)
@@ -207,12 +158,70 @@ public partial class MainPageBlogs : ContentPage
             bool success = await _apiService.DeleteDataAsync(DeleteURl);
             if (success)
             {
-                // Get new Dislikecounter value
-                InitGetBlogs();
+                // Find the blog post in the collection
+                var blog = ListOfBlogs.FirstOrDefault(b => b.Id == list.blogIdF);
+                if (blog != null)
+                {
+                    ListOfBlogs.Remove(blog);
+                }
             }
         }
 
 
     }
+    //Goed werkend + extra functies
+    public async Task<bool> PostLikeDislikeCounter(string apiurl, int tempBlogId, int tempBlogLikeCounter)
+    {
+        // Place ID and Counter in data class
+        var data = new
+        {
+            BlogId = tempBlogId,
+            BlogLikeCounter = tempBlogLikeCounter
+        };
 
+        // connectie met database
+        try
+        {
+            bool success = await _apiService.PostDataAsync(apiurl, data);
+            return true;
+        }
+        catch (HttpRequestException httpEx)
+        {
+            NotificationGetBlogs.Text = $"HTTP Request Error: {httpEx.Message}";
+            NotificationGetBlogs.TextColor = Colors.Red;
+            return false;
+        }
+        catch (Exception ex)
+        {
+            NotificationGetBlogs.Text = $"General Error: {ex.Message}";
+            NotificationGetBlogs.TextColor = Colors.Red;
+            return false;
+        }
+    }
+    public (int blogIdF, int CounterF) GetBlogIDAndCounter(object sender)
+    {
+        int tempBlogId = -4;
+        int tempBlogLikeCounter = -5;
+
+        if (sender is Button button && button.CommandParameter is int blogId)
+        {
+            // Find the blog post in the collection
+            var blog = ListOfBlogs.FirstOrDefault(b => b.Id == blogId);
+            if (blog != null)
+            {
+                tempBlogId = blog.Id;
+                tempBlogLikeCounter = blog.Likes;
+
+                return (tempBlogId, tempBlogLikeCounter);
+            }
+            else
+            {
+                return (tempBlogId, tempBlogLikeCounter);
+            }
+        }
+        else
+        {
+            return (tempBlogId, tempBlogLikeCounter);
+        }
+    }
 }
