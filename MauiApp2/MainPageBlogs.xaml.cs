@@ -154,11 +154,17 @@ public partial class MainPageBlogs : ContentPage
             BlogLikeID = list.blogIdF;
             NewBlogLikeCounter = list.CounterF + 1;
             string tempUrl = apiUrl + "/" + BlogLikeID.ToString() + "/" + "like";
-            await PostLikeDislikeCounter(tempUrl, BlogLikeID, NewBlogLikeCounter);
-        }
-
-        // Get new Like counter value
-        InitGetBlogs();  
+            bool success = await PostLikeDislikeCounter(tempUrl, BlogLikeID, NewBlogLikeCounter);
+            if (success) 
+            {
+                // Find the blog post in the collection
+                var blog = ListOfBlogs.FirstOrDefault(b => b.Id == list.blogIdF);
+                if (blog != null)
+                {
+                    blog.Likes = blog.Likes + 1;
+                }
+            }
+        }  
     }
     public async void OnDislikeBlog(object sender, EventArgs e)
     {
@@ -175,10 +181,17 @@ public partial class MainPageBlogs : ContentPage
             BlogDislikeCounter = list.CounterF + 1;
             string tempUrl = apiUrl + "/" + BlogDislikeID.ToString() + "/" + "dislike";
             await PostLikeDislikeCounter(tempUrl, BlogDislikeID, BlogDislikeCounter);
+            bool success = await PostLikeDislikeCounter(tempUrl, BlogDislikeID, BlogDislikeCounter);
+            if (success)
+            {
+                // Find the blog post in the collection
+                var blog = ListOfBlogs.FirstOrDefault(b => b.Id == list.blogIdF);
+                if (blog != null)
+                {
+                    blog.Dislikes = blog.Dislikes + 1;
+                }
+            }
         }
-
-        // Get new Dislikecounter value
-        InitGetBlogs();
     }
     public async void OnDeleteBlog(object sender, EventArgs e)
     {

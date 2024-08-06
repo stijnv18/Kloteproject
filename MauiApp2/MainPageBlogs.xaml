@@ -43,14 +43,17 @@
                                 <Label Grid.Row="0" Grid.ColumnSpan="5" Text="{Binding Title}" FontSize="40"
                                     VerticalOptions="Center" HorizontalOptions="Start" TextColor="MediumPurple"
                                 />
+                                
                                 <Button x:Name = "DeleteBlogs" Clicked = "OnDeleteBlog" CommandParameter="{Binding Id}" Grid.Row="0" Grid.Column="7" Grid.ColumnSpan="8" Text="X" 
                                         BackgroundColor="Transparent" TextColor="MediumPurple" BorderColor="MediumPurple" BorderWidth="2"
                                 />
+                                
                                 <Label Grid.Row="1" Grid.ColumnSpan="6" Text="{Binding Content}" FontSize="Small" MinimumHeightRequest="100"
                                         VerticalOptions="Center" HorizontalOptions="Start" TextColor="DimGray"
                                 />
 
                                 <Rectangle Grid.Row="2" Grid.Column="0" BackgroundColor="MediumPurple"/>
+                                
                                 <Label x:Name="ButtonUser" Grid.Row="2" Grid.Column="1" Text="USERNAME LastName" FontSize="8" Background="Transparent"
                                         VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"/>
                                 <Label Grid.Row="2" Grid.Column="2" Text="{Binding CreatedAt}" FontSize="8" 
