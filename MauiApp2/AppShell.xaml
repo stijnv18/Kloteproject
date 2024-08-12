@@ -8,13 +8,10 @@
     Title="MauiApp2">
     <TabBar>
         <Tab Title="Home">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPageBlogs}" />
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
         </Tab>
         <Tab Title="Make New Blog">
-            <ShellContent ContentTemplate="{DataTemplate local:SubPageMakeNewBlog}" />
-        </Tab>
-        <Tab Title="Profiles">
-            <ShellContent ContentTemplate="{DataTemplate local:SubPageUserProfile}" />
+            <ShellContent ContentTemplate ="{DataTemplate local:SubPageMakeNewBlog}" />
         </Tab>
     </TabBar>
 </Shell>

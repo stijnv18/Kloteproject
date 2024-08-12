@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sGQVC6a1hj8=",
+  "dgSpecHash": "+4ztcId9oIA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MauiApp2.csproj",
+  "projectFilePath": "C:\\Users\\vbtan\\Desktop\\MauiApp2\\MauiApp2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vbtan\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\vbtan\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

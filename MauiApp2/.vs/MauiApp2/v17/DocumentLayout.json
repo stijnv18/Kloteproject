@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\",
+  "WorkspaceRootPath": "C:\\Users\\vbtan\\Desktop\\MauiApp2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\github\\kloteproject\\mauiapp2\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\github\\kloteproject\\mauiapp2\\mainpageblogs.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:mainpageblogs.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\documents\\github\\kloteproject\\mauiapp2\\mainpageblogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:mainpageblogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|c:\\users\\vbtan\\desktop\\mauiapp2\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65847182-37C0-445F-B79F-AAEDB185A960}|MauiApp2.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\ApiService.cs",
-              "RelativeDocumentMoniker": "ApiService.cs",
-              "ToolTip": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\ApiService.cs",
-              "RelativeToolTip": "ApiService.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\vbtan\\Desktop\\MauiApp2\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\vbtan\\Desktop\\MauiApp2\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T21:12:18.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainPageBlogs.xaml",
-              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MainPageBlogs.xaml",
-              "RelativeDocumentMoniker": "MainPageBlogs.xaml",
-              "ToolTip": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MainPageBlogs.xaml",
-              "RelativeToolTip": "MainPageBlogs.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-06T21:00:31.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPageBlogs.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MainPageBlogs.xaml.cs",
-              "RelativeDocumentMoniker": "MainPageBlogs.xaml.cs",
-              "ToolTip": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MainPageBlogs.xaml.cs",
-              "RelativeToolTip": "MainPageBlogs.xaml.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAmwB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T14:07:38.137Z",
+              "WhenOpened": "2024-08-12T19:07:17.11Z",
               "EditorCaption": ""
             }
           ]

@@ -64,11 +64,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="MainPageBlogs.xaml.cs">
-	    <DependentUpon>MainPageBlogs.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="SubPageUserProfile.xaml.cs">
-	    <DependentUpon>SubPageUserProfile.xaml</DependentUpon>
+	  <Compile Update="MainPage.xaml.cs">
+	    <DependentUpon>MainPage.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="SubPageMakeNewBlog.xaml.cs">
 	    <DependentUpon>SubPageMakeNewBlog.xaml</DependentUpon>
@@ -76,10 +73,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MainPageBlogs.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="SubPageUserProfile.xaml">
+	  <MauiXaml Update="MainPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SubPageMakeNewBlog.xaml">
