@@ -33374,11 +33374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vbtan\\Desktop\\MauiApp2\\MauiApp2.csproj",
+      "projectUniqueName": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MauiApp2.csproj",
       "projectName": "MauiApp2",
-      "projectPath": "C:\\Users\\vbtan\\Desktop\\MauiApp2\\MauiApp2.csproj",
+      "projectPath": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\MauiApp2.csproj",
       "packagesPath": "C:\\Users\\vbtan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vbtan\\Desktop\\MauiApp2\\obj\\",
+      "outputPath": "C:\\Users\\vbtan\\Documents\\GitHub\\Kloteproject\\MauiApp2\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

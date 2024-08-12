@@ -53,7 +53,7 @@
 
                                 <Rectangle Grid.Row="2" Grid.Column="0" BackgroundColor="MediumPurple"/>
 
-                                <Label x:Name="LabelUser" Grid.Row="2" Grid.Column="1" Text="USERNAME LastName" FontSize="8" Background="Transparent"
+                                <Label x:Name="LabelUser" Grid.Row="2" Grid.Column="1" Text="Anonymous" FontSize="8" Background="Transparent"
                                         VerticalOptions="Center" HorizontalOptions="End" TextColor="Gray"/>
                                 <Label Grid.Row="2" Grid.Column="2" Text="{Binding CreatedAt}" FontSize="8" 
                                         VerticalOptions="Center" HorizontalOptions="Center" TextColor="DimGray"
