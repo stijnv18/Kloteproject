@@ -77,7 +77,7 @@ namespace MauiApp2.Viewmodels
                         if (newblog == null)
                         {
                             blog.DeleteRequested += OnDeleteRequested;
-                            ListOfBlogs.Insert(1, blog);
+                            ListOfBlogs.Insert(0, blog);
                         }
                     }
                 }
